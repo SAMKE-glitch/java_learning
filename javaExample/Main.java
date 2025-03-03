@@ -1,9 +1,18 @@
 public class Main {
-    int x;
+    // Static method
+    static void myStaticMethod() {
+        System.out.println("Static methods can be called without creating objects");
+    }
 
+    // Public methods
+    public void myPublicMethod() {
+        System.out.println("Public methods must be called by creating objects");
+    }
+    // main method
     public static void main(String[] args) {
-        Main myObj = new Main(); // Object
-        myObj.x = 40;
-        System.out.println(myObj.x);
+        myStaticMethod(); // call the sttic method
+        // myPublicMethod(); // This would compile an error
+        Main myObj = new Main();
+        myObj.myPublicMethod();
     }
 }
