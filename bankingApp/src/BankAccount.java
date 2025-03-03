@@ -28,8 +28,8 @@ public class BankAccount {
 
     // display balance
     public void displayBalance() {
-        System.out.println("Account Holder:" + accountHolder);
-        System.out.println("Account Number:" + accountNumber);
-        System.out.println("Balance:" + balance);
+        System.out.println("Account Holder: " + accountHolder);
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance: " + balance + " Please budge responsibly");
     }
 }
