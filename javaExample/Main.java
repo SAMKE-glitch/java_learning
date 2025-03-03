@@ -1,12 +1,14 @@
 public class Main {
-    int x;
+    int modelYear;
+    String modelName;
 
     // class constructor for the Main class
-    public Main(int y){
-        x = y;
+    public Main(int year, String name){
+        modelName = name;
+        modelYear = year;
     }
     public static void main(String[] args) {
-        Main myObj = new Main(5);
-        System.out.println(myObj.x);
+        Main myCar = new Main(1969, "Mustang");
+        System.out.println(myCar.modelYear + " " + myCar.modelName);
     }
 }
