@@ -7,5 +7,7 @@ class Second {
         System.out.println("Age: " + myObj.age);
         System.out.println("Graduation Year: "+ myObj.graduationYear);
         myObj.study(); // call abstract method
+        myObj.setLname("Mwawasi");
+        System.out.println(myObj.getLname());
     }
 }
