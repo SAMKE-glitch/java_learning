@@ -26,8 +26,9 @@ public class Order {
         return switch (this.status) {
             case DRAFT -> mewStatus == OrderStatus.PUBLISHED;
             case PUBLISHED -> newStatus == OrderStatus.PROCESSING;
-            case PROCESSING -> newStatus == OrderStatus.DISPATCHED;
-            case DELIVERED -> newStatus == OrderStatus == OrderStatus.DELIVERED;
+            case PROCESSING -> newStatus == OrderStatus.DISPATCHING;
+            case DISPATCHING -> newStatus == OrderStatus.DISPATCHED;
+            case DISPATCHED -> newStatus == OrderStatus == OrderStatus.DELIVERED;
             case COMPLETED -> false; // No transition after completion
         };
     }
