@@ -1,4 +1,4 @@
-package com.company.of;
+package com.samke.of;
 
 // Handles bussines logic
 // Acts as a service layer  to manage business logic separately

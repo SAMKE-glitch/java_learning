@@ -1,4 +1,4 @@
-package com.company.of;
+package com.samke.of;
 
 // The Order class stores order details and allows updating order status
 public class Order {
@@ -12,8 +12,8 @@ public class Order {
     }
 
     // Updates order status while ensuring valid transitions
-    public void updateSatus(OrderStatus newStatus) {
-        if (isValidTransion(newStatus)) {
+    public void updateStatus(OrderStatus newStatus) {
+        if (isValidTransition(newStatus)) {
             this.status = newStatus;
             System.out.println("Order" + orderId + " status update to: " + status);
         } else {
@@ -24,11 +24,12 @@ public class Order {
     // Enforces valid state transitions (prevents skipping steps like DRAFT -> DISPATCHED)
     private boolean isValidTransition(OrderStatus newStatus){
         return switch (this.status) {
-            case DRAFT -> mewStatus == OrderStatus.PUBLISHED;
+            case DRAFT -> newStatus == OrderStatus.PUBLISHED;
             case PUBLISHED -> newStatus == OrderStatus.PROCESSING;
             case PROCESSING -> newStatus == OrderStatus.DISPATCHING;
             case DISPATCHING -> newStatus == OrderStatus.DISPATCHED;
-            case DISPATCHED -> newStatus == OrderStatus == OrderStatus.DELIVERED;
+            case DISPATCHED -> newStatus == OrderStatus.DELIVERED;
+            case DELIVERED -> newStatus == OrderStatus.COMPLETED;
             case COMPLETED -> false; // No transition after completion
         };
     }
