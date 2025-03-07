@@ -2,13 +2,13 @@
 
 // Importing required classes
 import java.lang.annotation.Annotation;
-import java.lang.annotation.Retention;
 import java.lang.annotation.Repeatable;
+import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
 
 // Make Words annotation repeatable
-@Repeatable(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.RUNTIME)
 @Repeatable(MyRepeatedAnnos.class)
 @interface Words
 {
@@ -22,13 +22,14 @@ import java.lang.reflect.Method;
 {
     Words[] value();
 }
-public class Main {
+public class RptAnno {
 
     // Repeat Words on newMethod
     @Words(word = "First", value = 1)
     @Words(word = "Second", value = 2)
-    public static void newMethod() {
-        Main obj = new Main();
+    public static void newMethod()
+    {
+        RptAnno obj = new RptAnno();
 
         try {
             Class<?> c = obj.getClass();
@@ -37,13 +38,13 @@ public class Main {
             Method m = c.getMethod("newMethod");
 
             // Display the repeated annotation
-            Annotation anno = m.getAnnotation(MyRepeatedAnnos.class);
+            Annotation anno
+                    = m.getAnnotation(MyRepeatedAnnos.class);
             System.out.println(anno);
-        } catch (NoSuchMethodException e) {
+        }
+        catch (NoSuchMethodException e) {
             System.out.println(e);
         }
     }
-    public static void main(String[] args) {
-        newMethod();
-    }
+    public static void main(String[] args) { newMethod(); }
 }
