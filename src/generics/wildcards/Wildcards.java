@@ -13,6 +13,7 @@ public class Wildcards {
     }
     // 2. LOWER BOUNDED WILDCARDS (? super T>)
     // Use when a method only writes to a collection
+
     public void addNumber(List<? super Integer> list){
         list.add(10);
         list.add(29);
