@@ -1,4 +1,4 @@
-package com.samke.of;
+package of;
 // Enum defining all possible order states in the fulfillment process
 // enum for order states
 public enum OrderStatus {

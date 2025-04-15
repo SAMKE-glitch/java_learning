@@ -1,4 +1,7 @@
-package com.samke.of;
+package of;
+
+import of.OrderStatus;
+import enums.Status;
 
 // The Order class stores order details and allows updating order status
 public class Order {
@@ -37,5 +40,8 @@ public class Order {
     // Getter for status
     public OrderStatus getStatus() {
         return status;
+    }
+
+    public void setStatus(Status status) {
     }
 }
