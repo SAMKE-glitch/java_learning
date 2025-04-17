@@ -169,4 +169,18 @@ Database      -> UserRepository : generated ID
 UserRepository -> UserService   : UserEntity(id, …)
 UserService   -> UserController  : UserEntity
 ````
+In GraphQL
+``
+Client -> GraphQL Engine : mutation createUser(input)
+GraphQL   -> UserMutation  : createUser(input)
+UserMutation -> UserService : createUser(dto)
+UserService -> UserRepository : existsByUsername?
+UserService -> UserRepository : save(entity)
+UserRepository -> DB         : INSERT...
+DB         -> UserRepository : new record ID
+UserRepository -> UserService : entity
+UserService   -> UserMutation : entity
+UserMutation  -> GraphQL      : UserPayload
+GraphQL       -> Client       : { data: { createUser: … } }
+``
 In summary, the DTOs act as the contract boundaries, the Controller handles HTTP concerns, the Service encapsulates business logic and mapping, the Repository orchestrates persistence, and the Database ultimately stores the record. This layered approach promotes separation of concerns, testability, and maintainability.
