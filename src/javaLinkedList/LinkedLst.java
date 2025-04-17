@@ -1,4 +1,5 @@
 package javaLinkedList;
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.awt.*;
 import java.util.LinkedList;
 
@@ -9,6 +10,9 @@ public class LinkedLst {
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
+        System.out.println(cars);
+        cars.addFirst("Subaru");
+        cars.addLast("Mambaru");
         System.out.println(cars);
     }
 }
