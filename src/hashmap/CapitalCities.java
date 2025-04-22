@@ -18,7 +18,8 @@ public class CapitalCities {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("German", "Berlin");
 
-        System.out.println(capitalCities);
+
+        System.out.println(capitalCities.get("England"));
 
     }
 }
