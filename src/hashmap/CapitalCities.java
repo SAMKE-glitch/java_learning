@@ -18,6 +18,7 @@ public class CapitalCities {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("German", "Berlin");
 
+        // Printing key and values on the HashMap object
         for(String i : capitalCities.keySet()){
             System.out.println("Key: " + i + ","+ " Value: " + capitalCities.get(i));
         }
