@@ -1,7 +1,24 @@
 package hashmap;
 
+import java.net.SocketOption;
 import java.util.HashMap;
 
 public class CapitalCities {
-    HashMap<String, String> capitalCities = new HashMap<String, String>();
+    public static void main(String[] args) {
+        // Creating a HashMap object called capitalCities
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+        // Add key and values to the object capitalCities
+        capitalCities.put("England", "London");
+        capitalCities.put("Kenya", "Nairobi");
+        capitalCities.put("Tanzania", "Dar es Salaam");
+        capitalCities.put("Nigeria", "Abuja");
+        capitalCities.put("Uganda", "Kampala");
+        capitalCities.put("United States", "Washington DC");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("German", "Berlin");
+
+        System.out.println(capitalCities);
+
+    }
 }
