@@ -22,6 +22,7 @@ public class CapitalCities {
 
 
         System.out.println(capitalCities);
+        System.out.println(capitalCities.size());
 
     }
 }
