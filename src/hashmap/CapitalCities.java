@@ -18,6 +18,10 @@ public class CapitalCities {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("German", "Berlin");
 
+        for(String i : capitalCities.values()){
+            System.out.println(i);
+        }
+
         capitalCities.remove("Kenya");
 
 
