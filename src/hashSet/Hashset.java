@@ -12,6 +12,7 @@ public class Hashset {
         cars.add("Toyota");
         cars.add("Bugatti sport");
         cars.add("BMW");
+        cars.add("BMW");
         System.out.println(cars);
 
     }
