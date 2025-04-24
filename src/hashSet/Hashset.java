@@ -7,6 +7,11 @@ public class Hashset {
         HashSet<String> cars = new HashSet<>();
 
         cars.add("Volvo");
+        cars.add("Subaru");
+        cars.add("Mazda");
+        cars.add("Toyota");
+        cars.add("Bugatti sport");
+        cars.add("BMW");
         System.out.println(cars);
 
     }
