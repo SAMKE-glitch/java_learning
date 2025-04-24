@@ -16,5 +16,9 @@ public class Hashset {
         System.out.println(cars);
         System.out.println(cars.contains("Bugatti sport"));
 
+        for (String i : cars) {
+            System.out.println(i);
+        }
+
     }
 }
