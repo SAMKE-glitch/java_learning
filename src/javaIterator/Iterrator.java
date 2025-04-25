@@ -17,6 +17,7 @@ public class Iterrator {
         Iterator<String> it = cars.iterator();
 
         // Print the first item
+        // Good to use the branch
         System.out.println(it.next());
 
     }
