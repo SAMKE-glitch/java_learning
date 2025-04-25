@@ -1,6 +1,7 @@
 package javaIterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Iterrator {
     public static void main(String[] args) {
@@ -11,6 +12,12 @@ public class Iterrator {
         cars.add("Pagani");
         cars.add("Range Rover");
         cars.add("Volkswagen");
+
+        // Get the iterator
+        Iterator<String> it = cars.iterator();
+
+        // Print the first item
+        System.out.println(it.next());
 
     }
 }
