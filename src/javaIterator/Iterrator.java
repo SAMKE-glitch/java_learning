@@ -20,5 +20,8 @@ public class Iterrator {
         // Good to use the branch
         System.out.println(it.next());
 
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
     }
 }
