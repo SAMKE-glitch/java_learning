@@ -1,3 +1,5 @@
+package interfaces;
+
 // Pig "implements" the Animal interface
 class Pig implements Animal {
     public void animalSound() {
