@@ -12,7 +12,9 @@ class Pig implements Animal {
         System.out.println("Zzz");
     }
     public static void main(String[] args) {
-	    Pig myPig = new Pig();
 	    // Create a Pig object
+	    Pig myPig = new Pig();
+	    myPig.animalSound();
+	    myPig.sleep();
     }
 }
