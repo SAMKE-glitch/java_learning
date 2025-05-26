@@ -10,5 +10,10 @@ public class WrapperDemo {
 		int primitiveInt = 42;
 		Integer wrappedInt = primitiveInt;
 		System.out.println("Autoboxed Integr: " + wrappedInt);
+
+		// Unboxing: wrapper to primitive
+		Double wrappedDouble = 3.1415;
+		double primitiveDouble = wrappedDouble;
+		System.out.println("Nuboxed double: " + primitiveDouble);
 	}
 }
