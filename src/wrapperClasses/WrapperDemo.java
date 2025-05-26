@@ -32,5 +32,15 @@ public class WrapperDemo {
 		for(Boolean flag: flags) {
 			System.out.println(flag);
 		}
+
+		// Comparing wrapper objects
+		Integer a = 100;
+		Integer b = 100;
+		Integer c = 100;
+		Integer d = 100;
+
+		System.out.println("a == b: " + (a == b));
+		System.out.println("c == d: " + (c == d));
+		System.out.println("c.equals(d): " + c.equals(d));
 	}
 }
