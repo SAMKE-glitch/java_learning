@@ -42,5 +42,10 @@ public class WrapperDemo {
 		System.out.println("a == b: " + (a == b));
 		System.out.println("c == d: " + (c == d));
 		System.out.println("c.equals(d): " + c.equals(d));
+
+		// converting Wrapper to String
+		Integer number = 123;
+		String numString = number.toString();
+		System.out.println("number in string: " + numString);
 	}
 }
