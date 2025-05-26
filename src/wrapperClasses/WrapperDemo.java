@@ -15,5 +15,10 @@ public class WrapperDemo {
 		Double wrappedDouble = 3.1415;
 		double primitiveDouble = wrappedDouble;
 		System.out.println("Nuboxed double: " + primitiveDouble);
+
+		// Using wrapper methods
+		String numberStr = "123";
+		int parsedInt = Integer.parseInt(numberStr);
+		System.out.println("Parsed int from string: " + parsedInt);
 	}
 }
