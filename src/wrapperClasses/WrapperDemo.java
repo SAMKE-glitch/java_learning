@@ -20,5 +20,17 @@ public class WrapperDemo {
 		String numberStr = "123";
 		int parsedInt = Integer.parseInt(numberStr);
 		System.out.println("Parsed int from string: " + parsedInt);
+
+		// Wrapper in collection
+		ArrayList<Boolean> flags = new ArrayList<>();
+		// autoboxed to Boolean
+		flags.add(true);
+		flags.add(false);
+		flags.add(Boolean.valueOf("true"));
+
+		System.out.println("Boolean values in ArrayList:");
+		for(Boolean flag: flags) {
+			System.out.println(flag);
+		}
 	}
 }
