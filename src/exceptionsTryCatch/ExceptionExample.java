@@ -15,6 +15,6 @@ public class ExceptionExample {
 		} finally {
 			System.out.println("This block always executes.");
 		}
-		System.out.println("The program continues...")
+		System.out.println("The program continues...");
 	}
 }
