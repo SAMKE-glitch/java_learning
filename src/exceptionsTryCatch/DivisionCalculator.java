@@ -24,8 +24,13 @@ public class DivisionCalculator {
 			// Division operation
 			int result = divide(numerator, denominator);
 			System.out.println("Result: " + result);
-
-
+		} catch (ArithmeticException e) {
+			System.out.println("Arithmetic exception caught: " + e.getMessage());
+		} catch (Exception e) {
+			System.out.println("Exception Caught: " + e.getMessage());
+		} finally {
+			System.out.println("End of Calculation");
+			scanner.close();
 		}
 	}
 }
