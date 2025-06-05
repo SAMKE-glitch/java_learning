@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 
 public class EmailValidator {
-	public static voif main(String[] args) {
+	public static void main(String[] args) {
 		// Define the regex pattern for a simple email validation
 		String emailPattern = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.(com|org|net)";
 		
