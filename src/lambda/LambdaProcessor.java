@@ -18,7 +18,7 @@ public class LambdaProcessor {
      *
      * @param transformer a lambda expression to transform the integer
      */
-    public void process(Funtion<Integer, Integer> transformer) {
+    public void process(Function<Integer, Integer> transformer) {
     	numbers.forEach(n -> System.out.println(transformer.apply(n)));
     }
 
@@ -26,8 +26,8 @@ public class LambdaProcessor {
      * Application Entry point
      */
 
-    public static void main(String[] args)
-        LamdaProcessor processor = new LambdaProcessor();
+    public static void main(String[] args){
+        LambdaProcessor processor = new LambdaProcessor();
         
         System.out.println("Doubled values:");
 	processor.process(n -> n*2);
