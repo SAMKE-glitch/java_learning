@@ -26,7 +26,7 @@ public class LambdaProcessor {
 	processor.process(n -> n * n);
 
 	System.out.println("Incremented values");
-	processor.process(n -> n+1)
+	processor.process(n -> n+1);
 
 
     }
