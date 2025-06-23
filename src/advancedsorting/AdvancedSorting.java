@@ -42,6 +42,20 @@ public class AdvancedSorting {
 	myCars.add(new Car("Ford", "Mustang", 1970));
 
 	// Sort using a comparator class
+	Collections.sort(myCars, new SortByYear());
+
+	// Display sorted list
+	System.out.println("Sorted by year:");
+	for (Car c : myCars) {
+	    System.out.println(c);
+	}
+
+	// Optional: Sort using lambda express
+	Collections.sort(myCars, (a, b) -> a.brand.compareTo(b.brand));
+	System.out.println("\nSorted by brand:");
+	for (Car c : myCar) {
+	    System.out.println(c);
+	}
 	
     }
 }
