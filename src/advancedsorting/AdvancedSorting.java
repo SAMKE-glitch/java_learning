@@ -26,5 +26,13 @@ public class AdvancedSorting {
     }
 
 
-    // 
+    // Static nested Comparator class to sort by year
+    static class SortByYear implememnts Comparator<Car> {
+        @Override
+	public int compare(Car a, Car b) {
+	    return Integer.compare(a.year, b.year)
+	}
+    }
+
+
 }
