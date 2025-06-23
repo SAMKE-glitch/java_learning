@@ -34,5 +34,14 @@ public class AdvancedSorting {
 	}
     }
 
+    public static void main(String[] args) {
+        // Create a list of cars
+	ArrayList<Car> myCars = new ArrayList<>();
+	myCars.add(new Car("BMW", "X5", 1999));
+	myCars.add(new Car("Honda", "Accord", 2006));
+	myCars.add(new Car("Ford", "Mustang", 1970));
 
+	// Sort using a comparator class
+	
+    }
 }
