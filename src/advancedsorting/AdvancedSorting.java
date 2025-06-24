@@ -3,7 +3,7 @@ package advancedsorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator
+import java.util.Comparator;
 
 
 public class AdvancedSorting {
@@ -27,10 +27,10 @@ public class AdvancedSorting {
 
 
     // Static nested Comparator class to sort by year
-    static class SortByYear implememnts Comparator<Car> {
+    static class SortByYear implements Comparator<Car> {
         @Override
 	public int compare(Car a, Car b) {
-	    return Integer.compare(a.year, b.year)
+	    return Integer.compare(a.year, b.year);
 	}
     }
 
@@ -53,7 +53,7 @@ public class AdvancedSorting {
 	// Optional: Sort using lambda express
 	Collections.sort(myCars, (a, b) -> a.brand.compareTo(b.brand));
 	System.out.println("\nSorted by brand:");
-	for (Car c : myCar) {
+	for (Car c : myCars) {
 	    System.out.println(c);
 	}
 	
