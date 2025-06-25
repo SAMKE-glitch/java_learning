@@ -46,5 +46,12 @@ public class AdvancedComparable {
 	for (Car c : myCars) {
 	    System.out.println(c);
 	}
+
+	// Reverse sort using lambda
+	myCars.sort((a, b) -> b.compareTo(a));
+	System.out.println("\nSorted by year (reverse):");
+	for (Car c : myCars) {
+	    System.out.println(c);
+	}
     }
 }
