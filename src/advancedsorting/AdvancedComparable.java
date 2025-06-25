@@ -32,4 +32,19 @@ public class AdvancedComparable {
             return brand + " " + model + " " + year;
         }
     }
+
+    public static void main(String[] args) {
+        ArrayList<Car> myCars = new ArrayList<>();
+	myCars.add(new Car("BMW", "X5", 1999));
+	myCars.add(new Car("Honda", "Accord", 2006));
+	myCars.add(new Car("Ford", "Mustang", 1970));
+
+	// Sorting using natural order (compareTo)
+	Collections.sort(myCars);
+
+	System.out.println("Sorted by year (natural order):");
+	for (Car c : myCars) {
+	    System.out.println(c);
+	}
+    }
 }
