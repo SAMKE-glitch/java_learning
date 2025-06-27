@@ -17,7 +17,7 @@ public class AdvancedComparable {
 
         public Car(String brand, String model, int year) {
             this.brand = brand;
-	    this model = model;
+	    this.model = model;
 	    this.year = year;
         }
 
@@ -28,7 +28,7 @@ public class AdvancedComparable {
         }
 
         @Override
-        public String to String() {
+        public String toString() {
             return brand + " " + model + " " + year;
         }
     }
