@@ -9,7 +9,7 @@ import java.util.Collections;
 public class AdvancedComparable {
 
     // Car class with natural ordering by year
-    public class Car implements Comparable<Car> {
+    static class Car implements Comparable<Car> {
         String brand;
         String model;
         int year;
