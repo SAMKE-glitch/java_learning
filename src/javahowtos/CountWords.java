@@ -9,6 +9,6 @@ public class CountWords {
 	int countWords = words.split("\\s+").length;
 
 	System.out.println("Input: " + words);
-	System.out.println(Word Count: ) countWords;
+	System.out.println("Word Count: "+ countWords);
     }
 }
