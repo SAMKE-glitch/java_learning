@@ -1,4 +1,4 @@
-package javahowtos
+package javahowtos;
 
 public class ArraySumCalculator {
     public static int calculateSum(int[] array) {
@@ -6,10 +6,10 @@ public class ArraySumCalculator {
 
 	// Iterate over the array and accumulate the sum
 	for (int i = 0; i < array.length; i++) {
-	    sum += array[i]
+	    sum += array[i];
 	}
 
-	return sum
+	return sum;
     }
 
     public static void main(String[] args) {
