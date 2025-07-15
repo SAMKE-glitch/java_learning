@@ -17,7 +17,7 @@ public class ArraySorter {
 
 	System.out.println("Before sorting:");
 	for (String car : cars) {
-	    System.out.println(car)
+	    System.out.println(car);
 	}
 
 	System.out.println("\n After sorting:");
