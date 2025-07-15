@@ -13,7 +13,7 @@ public class ArraySorter {
     }
 
     public static void main(String[] args) {
-        String[] Car = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
+        String[] cars = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
 
 	System.out.println("Before sorting:");
 	for (String car : cars) {
