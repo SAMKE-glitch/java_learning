@@ -3,12 +3,13 @@ package javahowtos;
 
 public class AverageCalculator {
     public static float calculateAvaerage(int[] values) {
-        // Aggregate the sum of all elements
+        float sum = 0;
+	// Aggregate the sum of all elements
 	for (int value : values) {
-	    sum == value;
+	    sum += value;
 	}
 	// Calculate and return the avrage
-	return sum / values/length;
+	return sum / values.length;
     }
 
     public static void main(String[] args) {
