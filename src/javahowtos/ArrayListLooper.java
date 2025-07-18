@@ -22,7 +22,7 @@ public class ArrayListLooper {
      * Main method to demonstrate iterating over an ArrayList.
      */
     public static void main(String[] args) {
-        ArrayList<String> car = new ArrayList<>();
+        ArrayList<String> cars = new ArrayList<>();
 	cars.add("Volvo");
 	cars.add("BMW");
 	cars.add("Ford");
