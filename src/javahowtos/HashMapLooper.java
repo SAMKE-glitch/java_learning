@@ -12,7 +12,7 @@ public class HashMapLooper {
      */
     public static void printKeys(HashMap<String, String> map) {
         System.out.println("Keys:");
-	for (String key: map.KeySet()) {
+	for (String key: map.keySet()) {
 	    System.out.println(key);
 	}
     }
