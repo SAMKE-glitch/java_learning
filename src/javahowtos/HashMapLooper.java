@@ -48,7 +48,8 @@ public class HashMapLooper {
 	capitalCities.put("Kenya", "Nairobi");
 	capitalCities.put("Tanzania", "Dodoma");
 	capitalCities.put("Uganda", "Kampala");
-	capitalCities.put("Etjiopia", "Addis Ababa");
+	capitalCities.put("Ethiopia", "Addis Ababa");
+	
 
 	printKeys(capitalCities);
 	System.out.println();
