@@ -22,9 +22,9 @@ public class HashMapLooper {
      * @param map the HashMap containing key-value pairs
      */
     public static void printValues(HashMap<String, String> map){
-        System.out.println(values:);
+        System.out.println("values:");
 	for (String value: map.values()) {
-	    System.out.println(value)
+	    System.out.println(value);
 	}
     }
 
