@@ -8,7 +8,7 @@ public class PositiveNegativeChecker {
 	Scanner scanner = new Scanner(System.in);
 
 	System.out.print("Enter a number: ");
-        int myNum = scanner.nextInt();
+        double myNum = scanner.nextDouble();
 
 	if (myNum > 0) {
 	    System.out.println("The value is a positive number.");
