@@ -14,7 +14,7 @@ public class SquareRootCalculator {
 	    System.out.println("Error: Cannot compute square root of a negative number.");
 	} else {
 	    double result = Math.sqrt(number);
-	    System.out.println("The square root of " + number + " is " + result);
+	    System.out.printf("The square root of %.2f is %.2f\n", number, result);
 	}
 
 	scanner.close();
