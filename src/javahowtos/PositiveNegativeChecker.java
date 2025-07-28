@@ -1,10 +1,14 @@
 package javahowtos;
 
 
+import java.util.Scanner;
+
 public class PositiveNegativeChecker {
     public static void main(String[] args) {
-	// Check if this number is positive, negative or zero
-        int myNum = 10;
+	Scanner scanner = new Scanner(System.in);
+
+	System.out.print("Enter a number: ");
+        int myNum = scanner.nextInt();
 
 	if (myNum > 0) {
 	    System.out.println("The value is a positive number.");
