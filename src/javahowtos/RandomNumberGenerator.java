@@ -26,7 +26,7 @@ public class RandomNumberGenerator {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
 	System.out.print("Enter minimum value: ");
 	int min = scanner.nextInt();
