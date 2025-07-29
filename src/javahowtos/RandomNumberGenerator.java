@@ -14,14 +14,14 @@ public class RandomNumberGenerator {
      * Math.random().
      */
     public static int generateWithMathRandom(int min, int max) {
-        return (int)(Math.random() * (max - min +1 )) + min;
+        return (int)(Math.random() * (max - min + 1 )) + min;
     }
 
     /**
      * Genrates a random integer between min and max (inclusive) using java.util.Random.
      */
     public static int generateWithRandomClass(int min, int max) {
-        Random rand = new Random():
+        Random rand = new Random();
 	return rand.nextInt(max - min + 1) + min;
     }
 
